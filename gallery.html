@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head><title>gallery page</title>
+<style>
+
+body { background-image: url('b01.jpg');
+    background-attachment: absolute;  
+    background-size: cover;
+    color:black;
+    border-style:solid ;
+    border-width:5px;
+    position:relative;
+    height:100%;
+           }
+
+.A01{;
+      font-size: 2em;
+        font-family: serif;
+		color: transparent;
+        animation: effect 2s linear infinite;}
+		
+ @keyframes effect {
+        0% {
+            background: linear-gradient(
+                blue, white);
+            -webkit-background-clip: text;
+        }
+ 
+        100% {
+            background: linear-gradient(
+               DeepPink, blue);
+            -webkit-background-clip: text;
+        }
+    }
+
+#container {
+  position: relative;
+  width: 30%;
+  aspect-ratio: 3/2;
+  margin: auto;
+  border: solid black 2px;
+}
+
+#leftDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 25px;
+  z-index: 1;
+  background-color: rgba(0, 0, pink, white);
+  color: blue;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+#imgDiv {
+  position: absolute;
+  inset: 0 0 0 0;
+  padding-left: 40px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  scroll-padding-inline: 30px 0;
+}
+      
+#imgDiv > img {
+  height: 95%;
+  margin: 2px;
+  scroll-snap-align: none start;
+}
+
+ input[type=submit] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: indigo;
+  color: white;
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="A01">
+<h1><center>GALLERY</center></h1>
+</div>
+
+<br>
+
+<h1>01.amari resort</h1><br>
+<div id="container">
+  <div id="leftDiv">RESORT01</div>
+  <div id="imgDiv">
+    <img src="images\a07.jpg" alt="amari01">
+    <img src="images\a08.jpg" alt="amari02">
+    <img src="images\a09.jpg" alt="amari03">
+    <img src="images\a10.jpg" alt="amari04">
+    <img src="images\a11.jpg" alt="amari05">
+  </div>
+</div>
+
+<h1>02.closenburg resort</h1><br>
+<div id="container">
+  <div id="leftDiv">RESORT02</div>
+  <div id="imgDiv">
+    <img src="images\c01.jpg" alt="closenburg01">
+    <img src="images\c02.jpg" alt="closenburg02">
+    <img src="images\c03.jpg" alt="closenburg03">
+    <img src="images\c04.jpg" alt="closenburg04">
+    <img src="images\c05.jpg" alt="closenburg05">
+  </div>
+</div>
+
+<h1>03.faiwaysunset resort</h1><br>
+<div id="container">
+  <div id="leftDiv">RESORT03</div>
+  <div id="imgDiv">
+    <img src="images\f01.jpg" alt="faiwaysunset01">
+    <img src="images\f02.jpg" alt="faiwaysunset02">
+    <img src="images\f03.jpg" alt="faiwaysunset03">
+    <img src="images\f04.jpg" alt="faiwaysunset04">
+    <img src="images\f05.jpg" alt="faiwaysunset05">
+  </div>
+</div>
+
+<h1>04.fortress resort</h1><br>
+<div id="container">
+  <div id="leftDiv">RESORT04</div>
+  <div id="imgDiv">
+    <img src="images\t01.jpg" alt="fortress resort01">
+    <img src="images\t02.jpg" alt="fortress resort02">
+    <img src="images\t03.jpg" alt="fortress resort03">
+    <img src="images\t04.jpg" alt="fortress resort04">
+    <img src="images\t05.jpg" alt="fortress resort05">
+  </div>
+</div>
+
+<h1>05.Le Grand Galle By Asia Leisure resort</h1><br>
+<div id="container">
+  <div id="leftDiv">RESORT05</div>
+  <div id="imgDiv">
+    <img src="images\l01.jpg" alt="Le Grand01">
+    <img src="images\l02.jpg" alt="Le Grand02">
+    <img src="images\l03.jpg" alt="Le Grand03">
+    <img src="images\l05.jpg" alt="Le Grand04">
+    <img src="images\l06.jpg" alt="Le Grand05">
+  </div>
+</div>
+
+  
+ <form method="GET" action="project20APC4584.html"> 
+ <input type="submit" value="HOME">
+ </form>
+
+</body>
+</html>
+

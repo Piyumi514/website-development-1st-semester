@@ -1,0 +1,65 @@
+<html>
+<head><title>signedIn </title>
+<style>
+
+body {background-image:url('g06.jpg');
+      background-size: cover;
+	   text-align : center;
+	  border-style:solid ;
+      border-width : 5px;
+	  position : relative; }
+
+input[type=submit] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: indigo;
+  color: white;
+  }
+</style>
+</head>
+<body>
+
+
+
+
+<script type="text/javascript">
+
+
+        var firstname=window.prompt("ENTER YOUR FIRSTNAME: ");
+		
+		
+		var lastname=window.prompt("ENTER YOUR LAST NAME: ");
+		
+		
+		alert("Your name is "+ firstname + " " +lastname + "." );
+		
+         var pwd=window.prompt("ENTER A PASSWARD: ");
+		
+		
+		
+		var rpwd=window.prompt("RE-ENTER YOUR PASSWARD: ");
+		
+		if(pwd=rpwd)
+		{alert("Your passward is " +rpwd);
+		}
+		else{
+		while(pwd=rpwd)
+		{
+		window.prompt("RE-ENTER YOUR PASSWARD ");
+		}
+		}
+		
+	
+</script>
+<center><br><br><br>
+<h1>You have successfully signed In.<br><br>Now you can log to our site using the home button.</h1>
+
+<form method="GET" action="project20APC4584.html"> 
+ <input type="submit" value="HOME">
+ </form>
+</center>
+</body>
+</html>
